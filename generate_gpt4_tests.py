@@ -17,8 +17,8 @@ df = pd.read_csv(csv_path)
 # Authors block to insert at the top of each file
 authors_block = """\
 # @Authors
-# * Student Name: Mustafa Engin
-# * Student ID: 504201647
+# * Student Name: Mustafa Yavuz Engin
+# * Student ID: 150200708
 """
 
 # Function to call OpenAI for code generation
