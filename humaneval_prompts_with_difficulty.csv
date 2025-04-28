@@ -1,31 +1,31 @@
 task_id,prompt,difficulty
-HumanEval/0,"def has_close_elements(numbers, threshold):",easy
-HumanEval/1,def separate_paren_groups(paren_string):,easy
-HumanEval/2,def truncate_number(number):,easy
-HumanEval/3,def below_zero(operations):,easy
-HumanEval/4,def mean_absolute_deviation(numbers):,easy
-HumanEval/5,"def intersperse(numbers, delimiter):",easy
-HumanEval/6,def parse_nested_parens(paren_string):,medium
-HumanEval/7,"def filter_by_substring(strings, substring):",easy
-HumanEval/8,def sum_product(numbers):,easy
-HumanEval/9,def rolling_max(numbers):,easy
-HumanEval/10,def make_palindrome(string):,medium
-HumanEval/11,"def string_xor(a, b):",easy
-HumanEval/12,def longest(strings):,easy
-HumanEval/13,"def greatest_common_divisor(a, b):",easy
-HumanEval/14,def all_prefixes(string):,easy
-HumanEval/15,def string_sequence(n):,easy
-HumanEval/16,def count_distinct_characters(string):,easy
-HumanEval/17,def parse_music(music_string):,medium
-HumanEval/18,"def how_many_times(string, substring):",medium
-HumanEval/19,def sort_numbers(numbers):,medium
-HumanEval/20,def find_closest_elements(numbers):,medium
-HumanEval/21,def rescale_to_unit(numbers):,medium
-HumanEval/22,def filter_integers(values):,easy
-HumanEval/23,def strlen(string):,easy
-HumanEval/24,def largest_divisor(n):,easy
-HumanEval/25,def factorize(n):,medium
-HumanEval/26,def remove_duplicates(numbers):,easy
-HumanEval/27,def flip_case(string):,easy
-HumanEval/28,def concatenate(strings):,easy
-HumanEval/29,"def filter_by_prefix(strings, prefix):",easy
+HumanEval/0,def calculate_area(radius):,easy
+HumanEval/1,"def merge_sorted_lists(list1, list2):",medium
+HumanEval/2,def find_longest_word(words):,easy
+HumanEval/3,def validate_password(password):,medium
+HumanEval/4,def fibonacci(n):,easy
+HumanEval/5,def is_prime(number):,medium
+HumanEval/6,def sum_even_numbers(numbers):,easy
+HumanEval/7,def count_vowels(string):,easy
+HumanEval/8,def rotate_matrix(matrix):,hard
+HumanEval/9,def reverse_string(s):,easy
+HumanEval/10,"def anagram_check(str1, str2):",medium
+HumanEval/11,def flatten_list(nested_list):,hard
+HumanEval/12,def remove_duplicates(lst):,easy
+HumanEval/13,def get_unique_elements(lst):,easy
+HumanEval/14,def calculate_median(numbers):,medium
+HumanEval/15,def factorial(n):,easy
+HumanEval/16,def is_palindrome(word):,easy
+HumanEval/17,"def find_pairs_with_sum(numbers, target):",medium
+HumanEval/18,def group_anagrams(words):,hard
+HumanEval/19,"def binary_search(arr, target):",medium
+HumanEval/20,"def matrix_multiplication(A, B):",hard
+HumanEval/21,def move_zeros(nums):,easy
+HumanEval/22,"def gcd(a, b):",easy
+HumanEval/23,"def lcm(a, b):",easy
+HumanEval/24,def missing_number(nums):,medium
+HumanEval/25,def check_brackets(string):,medium
+HumanEval/26,def most_frequent_element(lst):,medium
+HumanEval/27,def generate_parentheses(n):,hard
+HumanEval/28,"def zigzag_conversion(s, num_rows):",medium
+HumanEval/29,def is_valid_sudoku(board):,hard

@@ -7,7 +7,7 @@ import time
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Create the output directory if it doesn't exist
-output_dir = "outputs/gpt3.5"
+output_dir = "outputsGPT/gpt3.5"
 os.makedirs(output_dir, exist_ok=True)
 
 # Read the dataset
@@ -19,6 +19,9 @@ authors_block = """\
 # @Authors
 # * Student Name: Mustafa Yavuz Engin
 # * Student ID: 150200708
+
+# * Student Name: Çiğdem Onur
+# * Student ID: 150190022
 
 """
 
@@ -54,6 +57,6 @@ for task_id in range(len(df)):
         f.write(authors_block + "\n\n" + test_response)
 
     # Wait between API calls to avoid rate limits
-    time.sleep(25)
+    time.sleep(40)
 
 print("\n[✔] All code and test files have been generated successfully.")

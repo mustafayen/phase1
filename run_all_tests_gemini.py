@@ -6,7 +6,7 @@ import sys
 # Directory containing the Gemini test files
 test_folder = "tests"
 # Directory containing the GPT-3.5 code files
-code_folder = "outputs/gpt3.5"
+code_folder = "outputsGPT/gpt3.5"
 
 # Counters
 total_tasks = 30

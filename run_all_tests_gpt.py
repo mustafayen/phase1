@@ -4,7 +4,7 @@ import importlib.util
 import sys
 
 # Directory containing the code and test files
-folder = "outputs/gpt3.5"
+folder = "outputsGPT/gpt3.5"
 
 # Counters for overall test statistics
 total_tests = 0
