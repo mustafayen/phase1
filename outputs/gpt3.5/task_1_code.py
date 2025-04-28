@@ -38,4 +38,4 @@ result = separate_paren_groups(paren_string)
 print(result)
 ```
 
-This function takes a string `paren_string` as input and separates the groups enclosed in parentheses. It uses a stack to keep track of the groups and builds the groups based on the parentheses. The function returns a list of separated groups.
+#This function takes a string `paren_string` as input and separates the groups enclosed in parentheses. It uses a stack to keep track of the groups and builds the groups based on the parentheses. The function returns a list of separated groups.
