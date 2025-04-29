@@ -1,6 +1,8 @@
 import unittest
 import math
 
+from task_1_code import calculate_area  
+
 class TestCalculateArea(unittest.TestCase):
 
     def test_positive_radius(self):
