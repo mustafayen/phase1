@@ -1,5 +1,7 @@
 import unittest
 
+from task_1_code import calculate_area
+
 class TestMergeSortedLists(unittest.TestCase):
 
     def test_empty_lists(self):
