@@ -76,6 +76,30 @@ run_coverageGPT.py
 
 ---
 
+
+## Coverage Results
+
+We used the `run_coverageGemini.py and run_coverageGPT.py` tool to measure line-by-line coverage of the generated tests.
+
+### GPT-3.5 Turbo Coverage
+
+| File Count | Total Statements | Missed Statements | Coverage |
+|------------|------------------|-------------------|----------|
+| 30 tasks   | 819              | 36                | 96%      |
+
+Most functions were fully covered by the generated tests. A few minor uncovered branches exist due to insufficient edge cases.
+
+### Gemini 2.0 Flash Coverage
+
+| File Count | Total Statements | Missed Statements | Coverage |
+|------------|------------------|-------------------|----------|
+| 30 tasks   | 783              | 7                 | 99%      |
+
+Gemini-generated tests achieved nearly full coverage across all files. Only a few statements were missed due to edge-case assumptions.
+
+
+---
+
 ## Dataset
 
 - HumanEval Dataset by OpenAI
