@@ -48,28 +48,24 @@ run_all_tests_gpt.py
 
 ## Results from GPT 3.5
 
-| Category | Value |
-| -------- | ----- |
-| Total Tasks Attempted | 30 |
-| Successful Tasks (Tests Passed) | 30 |
-| Skipped Tasks (due to syntax errors) | 8 |
-| Total Tests Run | 22 |
-| Successful Tests | 22 |
-| Test Success Rate | 100.00% |
+| Category          | Value  |
+|-------------------|--------|
+| Total Tests Run   | 119    |
+| Successful Tests  | 96     |
+| Failed Tests      | 23     |
+| Test Success Rate | 80.67% |
 
 
 ---
 
 ## Results from Gemini 2.0
 
-| Category | Value |
-| -------- | ----- |
-| Total Tasks Attempted | 30 |
-| Successful Tasks (Tests Passed) | 30 |
-| Skipped Tasks (due to syntax errors) | 8 |
-| Total Tests Run | 22 |
-| Successful Tests | 22 |
-| Test Success Rate | 100.00% |
+| Category          | Value  |
+|-------------------|--------|
+| Total Tests Run   | 22     |
+| Successful Tests  | 22     |
+| Failed Tests      | 4      |
+| Test Success Rate | 97.22% |
 
 
 ---
