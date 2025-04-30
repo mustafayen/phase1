@@ -8,25 +8,25 @@
 
 
 import unittest
-from my_module import lcm
+from task_23_code import lcm
 
 class TestLCMFunction(unittest.TestCase):
 
-    def test_lcm_of_4_and_6(self):
+    def test_lcm_positive_numbers(self):
         result = lcm(4, 6)
         self.assertEqual(result, 12)
 
-    def test_lcm_of_10_and_15(self):
-        result = lcm(10, 15)
-        self.assertEqual(result, 30)
+    def test_lcm_negative_numbers(self):
+        result = lcm(-8, -12)
+        self.assertEqual(result, 24)
 
-    def test_lcm_of_7_and_9(self):
-        result = lcm(7, 9)
-        self.assertEqual(result, 63)
-
-    def test_lcm_of_0_and_5(self):
+    def test_lcm_zero(self):
         result = lcm(0, 5)
         self.assertEqual(result, 0)
+
+    def test_lcm_same_number(self):
+        result = lcm(7, 7)
+        self.assertEqual(result, 7)
 
 if __name__ == '__main__':
     unittest.main()

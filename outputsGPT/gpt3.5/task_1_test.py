@@ -8,23 +8,33 @@
 
 
 import unittest
-
-def merge_sorted_lists(list1, list2):
-    return sorted(list1 + list2)
+from task_1_code import merge_sorted_lists
 
 class TestMergeSortedLists(unittest.TestCase):
 
     def test_merge_sorted_lists(self):
-        self.assertEqual(merge_sorted_lists([1, 3, 5], [2, 4, 6]), [1, 2, 3, 4, 5, 6])
+        list1 = [1, 3, 5]
+        list2 = [2, 4, 6]
+        expected_output = [1, 2, 3, 4, 5, 6]
+        self.assertEqual(merge_sorted_lists(list1, list2), expected_output)
 
-    def test_merge_sorted_lists_empty_lists(self):
-        self.assertEqual(merge_sorted_lists([], []), [])
+    def test_merge_sorted_lists_empty_list(self):
+        list1 = []
+        list2 = [2, 4, 6]
+        expected_output = [2, 4, 6]
+        self.assertEqual(merge_sorted_lists(list1, list2), expected_output)
 
-    def test_merge_sorted_lists_one_empty_list(self):
-        self.assertEqual(merge_sorted_lists([1, 2, 3], []), [1, 2, 3])
+    def test_merge_sorted_lists_duplicate_values(self):
+        list1 = [1, 3, 5]
+        list2 = [3, 4, 6]
+        expected_output = [1, 3, 3, 4, 5, 6]
+        self.assertEqual(merge_sorted_lists(list1, list2), expected_output)
 
-    def test_merge_sorted_lists_duplicate_elements(self):
-        self.assertEqual(merge_sorted_lists([1, 2, 3], [2, 3, 4]), [1, 2, 2, 3, 3, 4])
+    def test_merge_sorted_lists_negative_values(self):
+        list1 = [-5, -3, -1]
+        list2 = [-6, -4, -2]
+        expected_output = [-6, -5, -4, -3, -2, -1]
+        self.assertEqual(merge_sorted_lists(list1, list2), expected_output)
 
 if __name__ == '__main__':
     unittest.main()

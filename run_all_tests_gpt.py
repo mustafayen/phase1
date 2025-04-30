@@ -6,6 +6,9 @@ import sys
 # Directory containing the code and test files
 folder = "outputsGPT/gpt3.5"
 
+# Add the folder to sys.path
+sys.path.insert(0, folder)
+
 # Counters for overall test statistics
 total_tests = 0
 passed_tests = 0
@@ -28,7 +31,7 @@ for task_id in range(30):
             # Run the tests
             loader = unittest.TestLoader()
             suite = loader.loadTestsFromModule(module_test)
-            runner = unittest.TextTestRunner(verbosity=0, resultclass=unittest.result.TestResult)
+            runner = unittest.TextTestRunner(verbosity=2)
             result = runner.run(suite)
 
             total_tests += result.testsRun

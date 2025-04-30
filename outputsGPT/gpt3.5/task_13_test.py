@@ -8,23 +8,25 @@
 
 
 import unittest
-
-def get_unique_elements(lst):
-    return list(set(lst))
+from task_13_code import get_unique_elements
 
 class TestGetUniqueElements(unittest.TestCase):
 
-    def test_empty_list(self):
-        self.assertEqual(get_unique_elements([]), [])
-
     def test_all_unique_elements(self):
-        self.assertEqual(get_unique_elements([1, 2, 3, 4]), [1, 2, 3, 4])
+        lst = [1, 2, 3, 4, 5]
+        self.assertEqual(get_unique_elements(lst), [1, 2, 3, 4, 5])
 
     def test_duplicate_elements(self):
-        self.assertEqual(get_unique_elements([1, 2, 2, 3, 3, 4]), [1, 2, 3, 4])
+        lst = [1, 2, 2, 3, 3, 4, 5]
+        self.assertEqual(get_unique_elements(lst), [1, 2, 3, 4, 5])
+
+    def test_empty_list(self):
+        lst = []
+        self.assertEqual(get_unique_elements(lst), [])
 
     def test_mixed_elements(self):
-        self.assertEqual(get_unique_elements([1, 2, 3, 3, 4, 4, 5]), [1, 2, 3, 4, 5])
+        lst = [1, 'a', 2, 'b', 3]
+        self.assertEqual(get_unique_elements(lst), [1, 'a', 2, 'b', 3])
 
 if __name__ == '__main__':
     unittest.main()

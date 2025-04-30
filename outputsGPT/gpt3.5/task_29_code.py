@@ -41,4 +41,3 @@ def is_valid_set(nums):
                 return False
             seen.add(num)
     return True
-```

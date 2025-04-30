@@ -7,9 +7,7 @@
 
 
 
-Here is a Python function that performs matrix multiplication:
 
-```python
 def matrix_multiplication(A, B):
     result = [[0 for _ in range(len(B[0]))] for _ in range(len(A))]
     
@@ -19,6 +17,5 @@ def matrix_multiplication(A, B):
                 result[i][j] += A[i][k] * B[k][j]
     
     return result
-```
 
-You can use this function by passing two matrices `A` and `B` as arguments. The function will return the result of multiplying matrix `A` by matrix `B`.
+

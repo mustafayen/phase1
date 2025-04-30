@@ -8,7 +8,7 @@
 
 
 import unittest
-from anagram import anagram_check
+from task_10_code import anagram_check
 
 class TestAnagramCheck(unittest.TestCase):
 

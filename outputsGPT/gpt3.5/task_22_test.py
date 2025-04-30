@@ -8,27 +8,27 @@
 
 
 import unittest
-from my_module import gcd
+from task_22_code import gcd
 
 class TestGCDFunction(unittest.TestCase):
 
-    def test_gcd_positive_numbers(self):
+    def test_gcd_of_10_and_25(self):
         result = gcd(10, 25)
         self.assertEqual(result, 5)
 
-    def test_gcd_negative_numbers(self):
-        result = gcd(-10, -25)
+    def test_gcd_of_21_and_28(self):
+        result = gcd(21, 28)
+        self.assertEqual(result, 7)
+
+    def test_gcd_of_18_and_24(self):
+        result = gcd(18, 24)
+        self.assertEqual(result, 6)
+
+    def test_gcd_of_0_and_5(self):
+        result = gcd(0, 5)
         self.assertEqual(result, 5)
 
-    def test_gcd_one_negative_number(self):
-        result = gcd(-10, 25)
-        self.assertEqual(result, 5)
-
-    def test_gcd_one_zero(self):
-        result = gcd(0, 25)
-        self.assertEqual(result, 25)
-
-    def test_gcd_both_zeros(self):
+    def test_gcd_of_0_and_0(self):
         result = gcd(0, 0)
         self.assertEqual(result, 0)
 

@@ -51,7 +51,7 @@ for task_id in range(len(df)):
         f.write(authors_block + "\n\n" + code_response)
 
     # Request tests
-    test_prompt = f"Write 3-5 Python unittest test cases for the following function:\n{problem_prompt}"
+    test_prompt = f"Write 3-5 Python unittest test cases for the following function:\n{problem_prompt} . Import functions' code file as task_{task_id}_code."
     test_response = call_openai_code(test_prompt)
     with open(os.path.join(output_dir, f"task_{task_id}_test.py"), "w", encoding="utf-8") as f:
         f.write(authors_block + "\n\n" + test_response)

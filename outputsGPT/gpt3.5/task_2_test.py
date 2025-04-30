@@ -8,27 +8,25 @@
 
 
 import unittest
-
-def find_longest_word(words):
-    longest_word = ""
-    for word in words:
-        if len(word) > len(longest_word):
-            longest_word = word
-    return longest_word
+from task_2_code import find_longest_word
 
 class TestFindLongestWord(unittest.TestCase):
 
     def test_find_longest_word_single_word(self):
-        self.assertEqual(find_longest_word(["hello"]), "hello")
+        words = ['apple']
+        self.assertEqual(find_longest_word(words), 'apple')
 
     def test_find_longest_word_multiple_words(self):
-        self.assertEqual(find_longest_word(["apple", "banana", "cherry"]), "banana")
+        words = ['banana', 'orange', 'strawberry']
+        self.assertEqual(find_longest_word(words), 'strawberry')
 
     def test_find_longest_word_empty_list(self):
-        self.assertEqual(find_longest_word([]), "")
+        words = []
+        self.assertEqual(find_longest_word(words), None)
 
     def test_find_longest_word_equal_length_words(self):
-        self.assertEqual(find_longest_word(["cat", "dog", "bat"]), "cat")
+        words = ['dog', 'cat', 'bat']
+        self.assertEqual(find_longest_word(words), 'dog')
 
 if __name__ == '__main__':
     unittest.main()

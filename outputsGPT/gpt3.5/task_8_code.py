@@ -7,11 +7,6 @@
 
 
 
-The function `rotate_matrix` takes a matrix as input and rotates it 90 degrees clockwise.
-
-Here is the implementation of the function:
-
-```python
 def rotate_matrix(matrix):
     n = len(matrix)
     
@@ -34,6 +29,4 @@ matrix = [[1, 2, 3],
 rotated_matrix = rotate_matrix(matrix)
 for row in rotated_matrix:
     print(row)
-```
 
-This function first transposes the matrix by swapping the elements across the diagonal, then reverses each row to rotate the matrix 90 degrees clockwise.

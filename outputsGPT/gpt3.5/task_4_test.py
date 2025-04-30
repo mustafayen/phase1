@@ -8,33 +8,21 @@
 
 
 import unittest
-
-def fibonacci(n):
-    if n <= 0:
-        return "Invalid input"
-    elif n == 1:
-        return 0
-    elif n == 2:
-        return 1
-    else:
-        return fibonacci(n-1) + fibonacci(n-2)
+from task_4_code import fibonacci
 
 class TestFibonacci(unittest.TestCase):
 
     def test_fibonacci_0(self):
-        self.assertEqual(fibonacci(0), "Invalid input")
+        self.assertEqual(fibonacci(0), 0)
 
     def test_fibonacci_1(self):
-        self.assertEqual(fibonacci(1), 0)
-
-    def test_fibonacci_2(self):
-        self.assertEqual(fibonacci(2), 1)
+        self.assertEqual(fibonacci(1), 1)
 
     def test_fibonacci_5(self):
-        self.assertEqual(fibonacci(5), 3)
+        self.assertEqual(fibonacci(5), 5)
 
-    def test_fibonacci_10(self):
-        self.assertEqual(fibonacci(10), 34)
+    def test_fibonacci_negative(self):
+        self.assertEqual(fibonacci(-1), "Invalid input")
 
 if __name__ == '__main__':
     unittest.main()

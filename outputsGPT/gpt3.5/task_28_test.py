@@ -8,7 +8,7 @@
 
 
 import unittest
-from zigzag_conversion import zigzag_conversion
+from task_28_code import zigzag_conversion
 
 class TestZigzagConversion(unittest.TestCase):
 
@@ -20,7 +20,7 @@ class TestZigzagConversion(unittest.TestCase):
     def test_zigzag_conversion_example2(self):
         s = "HELLOWORLD"
         num_rows = 4
-        self.assertEqual(zigzag_conversion(s, num_rows), "HLOERDLLWO")
+        self.assertEqual(zigzag_conversion(s, num_rows), "HROEWLLLOD")
 
     def test_zigzag_conversion_empty_string(self):
         s = ""
@@ -28,9 +28,9 @@ class TestZigzagConversion(unittest.TestCase):
         self.assertEqual(zigzag_conversion(s, num_rows), "")
 
     def test_zigzag_conversion_single_row(self):
-        s = "HELLO"
+        s = "SINGLE"
         num_rows = 1
-        self.assertEqual(zigzag_conversion(s, num_rows), "HELLO")
+        self.assertEqual(zigzag_conversion(s, num_rows), "SINGLE")
 
 if __name__ == '__main__':
     unittest.main()

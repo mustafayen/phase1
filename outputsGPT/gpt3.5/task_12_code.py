@@ -7,7 +7,6 @@
 
 
 
-```python
 def remove_duplicates(lst):
     unique_lst = []
     for item in lst:
@@ -18,4 +17,3 @@ def remove_duplicates(lst):
 # Example
 lst = [1, 2, 2, 3, 4, 4, 5]
 print(remove_duplicates(lst))  # Output: [1, 2, 3, 4, 5]
-```

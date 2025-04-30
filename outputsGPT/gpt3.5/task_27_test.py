@@ -8,7 +8,7 @@
 
 
 import unittest
-from generate_parentheses import generate_parentheses
+from task_27_code import generate_parentheses
 
 class TestGenerateParentheses(unittest.TestCase):
 
@@ -20,9 +20,6 @@ class TestGenerateParentheses(unittest.TestCase):
 
     def test_generate_parentheses_3(self):
         self.assertEqual(generate_parentheses(3), ["((()))", "(()())", "(())()", "()(())", "()()()"])
-
-    def test_generate_parentheses_4(self):
-        self.assertEqual(generate_parentheses(4), ["(((())))", "((()()))", "((())())", "((()))()", "(()(()))", "(()()())", "(()())()", "(())(())", "(())()()", "()((()))", "()(()())", "()(())()", "()()(())", "()()()()"])
 
 if __name__ == '__main__':
     unittest.main()

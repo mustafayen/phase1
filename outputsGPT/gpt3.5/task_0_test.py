@@ -8,24 +8,21 @@
 
 
 import unittest
-from math import pi
-
-def calculate_area(radius):
-    return pi * radius**2
+from task_0_code import calculate_area
 
 class TestCalculateArea(unittest.TestCase):
 
     def test_positive_radius(self):
         self.assertEqual(calculate_area(5), 78.54)
 
+    def test_negative_radius(self):
+        self.assertEqual(calculate_area(-3), 0)
+
     def test_zero_radius(self):
         self.assertEqual(calculate_area(0), 0)
 
-    def test_negative_radius(self):
-        self.assertEqual(calculate_area(-5), 78.54)
-
     def test_large_radius(self):
-        self.assertEqual(calculate_area(100), 31415.93)
+        self.assertAlmostEqual(calculate_area(100), 31415.93, places=2)
 
 if __name__ == '__main__':
     unittest.main()

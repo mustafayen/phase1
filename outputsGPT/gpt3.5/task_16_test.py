@@ -8,16 +8,14 @@
 
 
 import unittest
-
-def is_palindrome(word):
-    return word == word[::-1]
+from task_16_code import is_palindrome
 
 class TestIsPalindrome(unittest.TestCase):
 
-    def test_palindrome(self):
+    def test_palindrome_word(self):
         self.assertTrue(is_palindrome("racecar"))
 
-    def test_not_palindrome(self):
+    def test_non_palindrome_word(self):
         self.assertFalse(is_palindrome("hello"))
 
     def test_empty_string(self):

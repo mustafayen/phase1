@@ -8,7 +8,7 @@
 
 
 import unittest
-from count_vowels import count_vowels
+from task_7_code import count_vowels
 
 class TestCountVowels(unittest.TestCase):
 
