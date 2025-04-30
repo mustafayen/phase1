@@ -79,7 +79,7 @@ run_coverageGPT.py
 
 ## Coverage Results
 
-We used the `run_coverageGemini.py and run_coverageGPT.py` tool to measure line-by-line coverage of the generated tests.
+We used the `run_coverageGemini.py` and `run_coverageGPT.py` tools to measure line-by-line coverage of the generated tests.
 
 ### GPT-3.5 Turbo Coverage
 
