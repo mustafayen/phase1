@@ -77,7 +77,7 @@ run_all_tests_gpt.py
 - Mustafa Yavuz Engin  
 - Student ID: 150200708
 
-- Mustafa Yavuz Engin  
-- Student ID: 150200708
+- Çiğdem Onur  
+- Student ID: 150190022
 
 - Course: BLG475E
