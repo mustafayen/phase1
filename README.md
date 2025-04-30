@@ -62,8 +62,8 @@ run_all_tests_gpt.py
 
 | Category          | Value  |
 |-------------------|--------|
-| Total Tests Run   | 22     |
-| Successful Tests  | 22     |
+| Total Tests Run   | 144    |
+| Successful Tests  | 140    |
 | Failed Tests      | 4      |
 | Test Success Rate | 97.22% |
 
