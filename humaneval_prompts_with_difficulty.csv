@@ -7,7 +7,7 @@ HumanEval/4,def fibonacci(n):,easy
 HumanEval/5,def is_prime(number):,medium
 HumanEval/6,def sum_even_numbers(numbers):,easy
 HumanEval/7,def count_vowels(string):,easy
-HumanEval/8,def rotate_matrix(matrix):,hard
+HumanEval/8,def rotate_matrix(matrix):,medium
 HumanEval/9,def reverse_string(s):,easy
 HumanEval/10,"def anagram_check(str1, str2):",medium
 HumanEval/11,def flatten_list(nested_list):,hard
