@@ -1,6 +1,6 @@
 import unittest
 
-from task_1_code import calculate_area
+from task_1_code import merge_sorted_lists
 
 class TestMergeSortedLists(unittest.TestCase):
 
