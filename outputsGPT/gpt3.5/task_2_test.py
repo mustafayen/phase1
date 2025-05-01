@@ -28,5 +28,5 @@ class TestFindLongestWord(unittest.TestCase):
         words = ['dog', 'cat', 'bat']
         self.assertEqual(find_longest_word(words), 'dog')
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

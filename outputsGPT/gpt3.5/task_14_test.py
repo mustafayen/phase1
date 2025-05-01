@@ -28,5 +28,5 @@ class TestCalculateMedian(unittest.TestCase):
         numbers = [5]
         self.assertEqual(calculate_median(numbers), 5)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

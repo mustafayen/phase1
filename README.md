@@ -85,7 +85,7 @@ We used the `run_coverageGemini.py` and `run_coverageGPT.py` tools to measure li
 
 | File Count | Total Statements | Missed Statements | Coverage |
 |------------|------------------|-------------------|----------|
-| 30 tasks   | 819              | 36                | 96%      |
+| 30 tasks   | 759              | 6                 | 99%      |
 
 Most functions were fully covered by the generated tests. A few minor uncovered branches exist due to insufficient edge cases.
 

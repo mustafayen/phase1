@@ -30,5 +30,5 @@ class TestMatrixMultiplication(unittest.TestCase):
         result = matrix_multiplication(A, B)
         self.assertEqual(result, [[58, 64], [139, 154]])
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

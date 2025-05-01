@@ -28,5 +28,5 @@ class TestLCMFunction(unittest.TestCase):
         result = lcm(7, 7)
         self.assertEqual(result, 7)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

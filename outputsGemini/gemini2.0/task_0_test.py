@@ -35,5 +35,5 @@ class TestCalculateArea(unittest.TestCase):
         expected_area = math.pi * radius**2
         self.assertAlmostEqual(calculate_area(radius), expected_area, places=7)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

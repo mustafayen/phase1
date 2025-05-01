@@ -24,5 +24,5 @@ class TestFibonacci(unittest.TestCase):
     def test_fibonacci_negative(self):
         self.assertEqual(fibonacci(-1), "Invalid input")
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

@@ -32,5 +32,5 @@ class TestFindPairsWithSum(unittest.TestCase):
         target = 2
         self.assertEqual(find_pairs_with_sum(numbers, target), [(-1, 3)])
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

@@ -28,5 +28,5 @@ class TestGetUniqueElements(unittest.TestCase):
         lst = [1, 'a', 2, 'b', 3]
         self.assertEqual(get_unique_elements(lst), [1, 'a', 2, 'b', 3])
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

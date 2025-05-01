@@ -32,5 +32,5 @@ class TestBinarySearch(unittest.TestCase):
         target = 5
         self.assertEqual(binary_search(arr, target), 0)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

@@ -69,5 +69,5 @@ class TestIsValidSudoku(unittest.TestCase):
         board[0][0] = 6
         self.assertFalse(is_valid_sudoku(board))
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

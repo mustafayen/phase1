@@ -32,5 +32,5 @@ class TestGCDFunction(unittest.TestCase):
         result = gcd(0, 0)
         self.assertEqual(result, 0)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

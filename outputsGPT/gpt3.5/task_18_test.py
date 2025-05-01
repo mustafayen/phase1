@@ -24,5 +24,5 @@ class TestGroupAnagrams(unittest.TestCase):
     def test_no_anagrams(self):
         self.assertEqual(group_anagrams(['listen', 'hello', 'world']), [['listen'], ['hello'], ['world']])
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

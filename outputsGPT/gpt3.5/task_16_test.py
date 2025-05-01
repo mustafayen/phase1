@@ -24,5 +24,5 @@ class TestIsPalindrome(unittest.TestCase):
     def test_single_character(self):
         self.assertTrue(is_palindrome("a"))
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

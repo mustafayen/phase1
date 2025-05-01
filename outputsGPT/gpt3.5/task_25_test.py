@@ -30,5 +30,5 @@ class TestCheckBrackets(unittest.TestCase):
         self.assertTrue(check_brackets("([])"))
         self.assertFalse(check_brackets("([)]"))
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

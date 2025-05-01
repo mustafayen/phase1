@@ -32,5 +32,5 @@ class TestZigzagConversion(unittest.TestCase):
         num_rows = 1
         self.assertEqual(zigzag_conversion(s, num_rows), "SINGLE")
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

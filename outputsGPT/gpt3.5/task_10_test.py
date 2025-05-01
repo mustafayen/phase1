@@ -24,5 +24,5 @@ class TestAnagramCheck(unittest.TestCase):
     def test_anagram_different_lengths(self):
         self.assertFalse(anagram_check("abc", "abcd"))
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

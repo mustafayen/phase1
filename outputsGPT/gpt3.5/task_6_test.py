@@ -24,5 +24,5 @@ class TestSumEvenNumbers(unittest.TestCase):
     def test_sum_even_numbers_with_empty_list(self):
         self.assertEqual(sum_even_numbers([]), 0)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

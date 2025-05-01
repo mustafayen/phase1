@@ -21,5 +21,5 @@ class TestGenerateParentheses(unittest.TestCase):
     def test_generate_parentheses_3(self):
         self.assertEqual(generate_parentheses(3), ["((()))", "(()())", "(())()", "()(())", "()()()"])
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

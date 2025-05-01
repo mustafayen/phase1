@@ -28,5 +28,5 @@ class TestFlattenList(unittest.TestCase):
         nested_list = [1, [2, 'a'], ['b', [5, 6]]]
         self.assertEqual(flatten_list(nested_list), [1, 2, 'a', 'b', 5, 6])
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

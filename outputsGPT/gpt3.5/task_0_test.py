@@ -24,5 +24,5 @@ class TestCalculateArea(unittest.TestCase):
     def test_large_radius(self):
         self.assertAlmostEqual(calculate_area(100), 31415.93, places=2)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

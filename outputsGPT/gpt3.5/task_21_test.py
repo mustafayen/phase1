@@ -36,5 +36,5 @@ class TestMoveZeros(unittest.TestCase):
         move_zeros(nums)
         self.assertEqual(nums, expected)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

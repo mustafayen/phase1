@@ -24,5 +24,5 @@ class TestReverseString(unittest.TestCase):
     def test_reverse_string_odd_length(self):
         self.assertEqual(reverse_string('python'), 'nohtyp')
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

@@ -32,5 +32,5 @@ class TestIsPrime(unittest.TestCase):
         result = is_prime(1)
         self.assertFalse(result)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

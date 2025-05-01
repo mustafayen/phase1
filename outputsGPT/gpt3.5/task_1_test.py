@@ -36,5 +36,5 @@ class TestMergeSortedLists(unittest.TestCase):
         expected_output = [-6, -5, -4, -3, -2, -1]
         self.assertEqual(merge_sorted_lists(list1, list2), expected_output)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

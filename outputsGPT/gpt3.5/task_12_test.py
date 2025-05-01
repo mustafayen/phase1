@@ -24,5 +24,5 @@ class TestRemoveDuplicates(unittest.TestCase):
     def test_remove_duplicates_mixed_data_types(self):
         self.assertEqual(remove_duplicates([1, 'a', 'b', 'a', 2, 3, 3]), [1, 'a', 'b', 2, 3])
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

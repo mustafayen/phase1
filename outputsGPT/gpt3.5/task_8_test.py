@@ -39,5 +39,5 @@ class TestRotateMatrix(unittest.TestCase):
                            [1, 4, 7]]
         self.assertEqual(rotate_matrix(matrix), expected_output)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

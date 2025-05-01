@@ -24,5 +24,5 @@ class TestValidatePassword(unittest.TestCase):
     def test_invalid_password_no_number(self):
         self.assertFalse(validate_password("Abcdefg!"))
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

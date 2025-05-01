@@ -24,5 +24,5 @@ class TestFactorialFunction(unittest.TestCase):
     def test_factorial_of_large_number(self):
         self.assertEqual(factorial(10), 3628800)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()

@@ -24,5 +24,5 @@ class TestMostFrequentElement(unittest.TestCase):
     def test_most_frequent_element_multiple_most_frequent_elements(self):
         self.assertEqual(most_frequent_element([1, 1, 2, 2, 3, 3]), [1, 2, 3])
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     unittest.main()
