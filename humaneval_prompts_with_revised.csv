@@ -1,0 +1,58 @@
+task_id,prompt,difficulty,revised_prompt
+HumanEval/0,def calculate_area(radius):,easy,"Given a non-negative float `radius`, return the area of a circle using the formula: π × radius².
+Return the result as a float. Assume input is always a valid number. Use math.pi for precision."
+HumanEval/1,"def merge_sorted_lists(list1, list2):",medium,"def merge_sorted_lists(list1, list2):"
+HumanEval/2,def find_longest_word(words):,easy,"Given a list of strings `words`, return the longest word in the list.
+If multiple words have the same maximum length, return the first one.
+If the list is empty, return an empty string."
+HumanEval/3,def validate_password(password):,medium,"Given a password string, return True if it meets all the following criteria:
+- At least 8 characters long
+- Contains at least one uppercase letter
+- Contains at least one lowercase letter
+- Contains at least one digit
+- Contains at least one special character (e.g., !@#$%^&*)
+Return False otherwise."
+HumanEval/4,def fibonacci(n):,easy,"Return the nth Fibonacci number, where:
+- fibonacci(0) = 0
+- fibonacci(1) = 1
+- fibonacci(n) = fibonacci(n-1) + fibonacci(n-2) for n > 1
+Assume n is a non-negative integer."
+HumanEval/5,def is_prime(number):,medium,def is_prime(number):
+HumanEval/6,def sum_even_numbers(numbers):,easy,def sum_even_numbers(numbers):
+HumanEval/7,def count_vowels(string):,easy,def count_vowels(string):
+HumanEval/8,def rotate_matrix(matrix):,medium,"Given a 2D matrix (list of lists), return the matrix rotated 90 degrees clockwise.
+Each sublist represents a row. Assume input is a rectangular matrix."
+HumanEval/9,def reverse_string(s):,easy,def reverse_string(s):
+HumanEval/10,"def anagram_check(str1, str2):",medium,"def anagram_check(str1, str2):"
+HumanEval/11,def flatten_list(nested_list):,hard,def flatten_list(nested_list):
+HumanEval/12,def remove_duplicates(lst):,easy,def remove_duplicates(lst):
+HumanEval/13,def get_unique_elements(lst):,easy,def get_unique_elements(lst):
+HumanEval/14,def calculate_median(numbers):,medium,"Given a list of numbers, return the median value.
+If the list has an even number of elements, return the average of the two middle numbers.
+The list will be non-empty and contain only numeric values."
+HumanEval/15,def factorial(n):,easy,"Compute the factorial of a non-negative integer n using recursion.
+Raise a ValueError if n is negative."
+HumanEval/16,def is_palindrome(word):,easy,def is_palindrome(word):
+HumanEval/17,"def find_pairs_with_sum(numbers, target):",medium,"Given a list of integers `numbers` and an integer `target`, return all unique unordered pairs (a, b)
+such that a + b == target. Each number may be used once per pair. Duplicates like (2,3) and (3,2) are considered the same
+and only one should appear."
+HumanEval/18,def group_anagrams(words):,hard,def group_anagrams(words):
+HumanEval/19,"def binary_search(arr, target):",medium,"def binary_search(arr, target):"
+HumanEval/20,"def matrix_multiplication(A, B):",hard,"def matrix_multiplication(A, B):"
+HumanEval/21,def move_zeros(nums):,easy,"Given a list `nums`, move all zeros to the end while maintaining the relative order of the non-zero elements.
+The operation should be in-place (i.e., modify the input list)."
+HumanEval/22,"def gcd(a, b):",easy,"def gcd(a, b):"
+HumanEval/23,"def lcm(a, b):",easy,"Given two integers a and b, return their least common multiple (LCM).
+If either number is 0, return 0. Assume inputs are integers."
+HumanEval/24,def missing_number(nums):,medium,"You are given an array `nums` containing `n` distinct numbers taken from the range [0, n].
+That means exactly one number in this range is missing from the array. Return the missing number.
+Your implementation should work in O(n) time and use constant extra space."
+HumanEval/25,def check_brackets(string):,medium,def check_brackets(string):
+HumanEval/26,def most_frequent_element(lst):,medium,"Given a list of elements, return the most frequently occurring element.
+If there are multiple elements with the same highest frequency, return the first one that appears.
+Return None if the list is empty."
+HumanEval/27,def generate_parentheses(n):,hard,def generate_parentheses(n):
+HumanEval/28,"def zigzag_conversion(s, num_rows):",medium,"Convert the input string `s` into a zigzag pattern on a given number of rows `num_rows`,
+then read line by line and return the resulting string. Assume num_rows >= 1.
+This is similar to the LeetCode 'ZigZag Conversion' problem."
+HumanEval/29,def is_valid_sudoku(board):,hard,def is_valid_sudoku(board):
