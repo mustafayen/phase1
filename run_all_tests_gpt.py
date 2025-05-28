@@ -2,17 +2,20 @@ import unittest
 import os
 import importlib.util
 import sys
+from prettytable import PrettyTable  # pip install prettytable if needed
 
 # Directory containing the code and test files
 folder = "outputsGPT/gpt3.5"
-
-# Add the folder to sys.path
 sys.path.insert(0, folder)
 
 # Counters for overall test statistics
 total_tests = 0
 passed_tests = 0
 failed_tests = 0
+
+# Table to store per-task results
+table = PrettyTable()
+table.field_names = ["Task ID", "Total Tests", "Passed", "Failed", "Status"]
 
 # Iterate through each task
 for task_id in range(30):
@@ -31,18 +34,35 @@ for task_id in range(30):
             # Run the tests
             loader = unittest.TestLoader()
             suite = loader.loadTestsFromModule(module_test)
-            runner = unittest.TextTestRunner(verbosity=2)
+            runner = unittest.TextTestRunner(verbosity=0)
             result = runner.run(suite)
 
-            total_tests += result.testsRun
-            failed_tests += len(result.failures) + len(result.errors)
-            passed_tests += result.testsRun - len(result.failures) - len(result.errors)
+            task_total = result.testsRun
+            task_failed = len(result.failures) + len(result.errors)
+            task_passed = task_total - task_failed
+
+            total_tests += task_total
+            passed_tests += task_passed
+            failed_tests += task_failed
+
+            status = "✓ Passed" if task_failed == 0 else "✗ Failed"
+            table.add_row([f"Task {task_id}", task_total, task_passed, task_failed, status])
+
+            # Optional: Show details if failed
+            if task_failed > 0:
+                for test, traceback in result.failures + result.errors:
+                    print(f"  [-] Failed: {test}\n    Traceback:\n{traceback}")
 
         except Exception as e:
-            print(f"Error in Task {task_id}: {e}")
+            print(f"[!] Error in Task {task_id}: {e}")
+            table.add_row([f"Task {task_id}", "N/A", "N/A", "N/A", "⚠️ Error"])
+
+# Print table
+print("\n\n========= DETAILED TASK RESULTS =========")
+print(table)
 
 # Print overall test results
-print("\n\n========= TEST RESULTS =========")
+print("\n========= OVERALL TEST RESULTS =========")
 print(f"Total Tests Run   : {total_tests}")
 print(f"Successful Tests  : {passed_tests}")
 print(f"Failed Tests      : {failed_tests}")
@@ -50,4 +70,4 @@ if total_tests > 0:
     print(f"Success Rate      : {(passed_tests / total_tests) * 100:.2f}%")
 else:
     print("No tests were executed.")
-print("=================================")
+print("=========================================")
