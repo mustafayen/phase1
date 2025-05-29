@@ -15,11 +15,11 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
-# Test the function
+# Test the function with predefined values
 try:
-    n = int(input("Enter a non-negative integer: "))
-    result = factorial(n)
-    print(f"The factorial of {n} is {result}")
+    test_values = [0, 1, 5, 7]
+    for n in test_values:
+        result = factorial(n)
+        print(f"The factorial of {n} is {result}")
 except ValueError as e:
     print(e)
-

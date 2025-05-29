@@ -5,7 +5,7 @@ import sys
 from prettytable import PrettyTable  # pip install prettytable if needed
 
 # Directory containing the code and test files
-folder = "outputsGemini/gemini2.0"
+folder = "outputsGemini/gemini2.0-revised-prompts"
 sys.path.insert(0, folder)
 
 # Counters for overall test statistics
