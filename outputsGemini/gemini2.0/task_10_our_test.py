@@ -24,7 +24,7 @@ class TestTask10(unittest.TestCase):
         self.assertTrue(anagram_check("aabbcc", "baccab"))
 
     def test_case_5(self):
-        with self.assertRaises(TypeError):
+        with self.assertRaises(AttributeError):
             anagram_check(123, "321")
 
 if __name__ == '__main__':

@@ -26,5 +26,8 @@ class TestTask7(unittest.TestCase):
     def test_case_5(self):
         self.assertEqual(count_vowels("Python Programming"), 4)
 
+    def test_case_6(self):
+        self.assertEqual(count_vowels("hi"), 1)
+
 if __name__ == '__main__':
     unittest.main()

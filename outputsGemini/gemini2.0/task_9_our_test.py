@@ -28,5 +28,8 @@ class TestTask9(unittest.TestCase):
         with self.assertRaises(TypeError):
             reverse_string(12345)
 
+    def test_case_6(self):
+        self.assertEqual(reverse_string("xy"), "yx")
+
 if __name__ == '__main__':
     unittest.main()

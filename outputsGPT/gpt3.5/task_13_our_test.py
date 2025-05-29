@@ -27,5 +27,6 @@ class TestTask13(unittest.TestCase):
     def test_case_5(self):
         self.assertEqual(get_unique_elements(["a", "b", "a", "c"]), ["b", "c"])
 
+
 if __name__ == '__main__':
     unittest.main()

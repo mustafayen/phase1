@@ -2,7 +2,8 @@ import unittest
 import os
 import importlib.util
 import sys
-from prettytable import PrettyTable  # pip install prettytable if needed
+from prettytable import PrettyTable
+import matplotlib.pyplot as plt
 
 # Directory containing the code and test files
 folder = "outputsGPT/gpt3.5"
@@ -71,3 +72,17 @@ if total_tests > 0:
 else:
     print("No tests were executed.")
 print("=========================================")
+
+
+
+labels = ['Passed', 'Failed']
+counts = [passed_tests, failed_tests]
+colors = ['green', 'red']
+
+plt.figure(figsize=(6, 6))
+plt.pie(counts, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
+plt.title('Test Success Rate for GPT-3.5 Tasks')
+plt.axis('equal')
+plt.tight_layout()
+plt.show()
+

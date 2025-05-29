@@ -2,7 +2,8 @@ import unittest
 import os
 import importlib.util
 import sys
-from prettytable import PrettyTable  # pip install prettytable if needed
+from prettytable import PrettyTable
+import matplotlib.pyplot as plt
 
 # Directory containing the code and test files
 folder = "outputsGemini/gemini2.0"
@@ -25,6 +26,9 @@ for task_id in range(30):
         print(f"\n[+] Running tests for Task {task_id}...")
 
         try:
+            # Unload previous module if exists
+            sys.modules.pop(f"task_{task_id}_our_test", None)
+
             # Load the test module dynamically
             spec_test = importlib.util.spec_from_file_location(f"task_{task_id}_our_test", test_file)
             module_test = importlib.util.module_from_spec(spec_test)
@@ -48,7 +52,6 @@ for task_id in range(30):
             status = "✓ Passed" if task_failed == 0 else "✗ Failed"
             table.add_row([f"Task {task_id}", task_total, task_passed, task_failed, status])
 
-            # Optional: Show details if failed
             if task_failed > 0:
                 for test, traceback in result.failures + result.errors:
                     print(f"  [-] Failed: {test}\n    Traceback:\n{traceback}")
@@ -71,3 +74,16 @@ if total_tests > 0:
 else:
     print("No tests were executed.")
 print("=========================================")
+
+
+# Plot pie chart
+labels = ['Passed', 'Failed']
+counts = [passed_tests, failed_tests]
+colors = ['green', 'red']
+
+plt.figure(figsize=(6, 6))
+plt.pie(counts, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
+plt.title('Test Success Rate for Gemini 2.0 Tasks')
+plt.axis('equal')
+plt.tight_layout()
+plt.show()

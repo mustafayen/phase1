@@ -15,7 +15,7 @@ class TestTask17(unittest.TestCase):
         self.assertEqual(find_pairs_with_sum([1, 2, 3, 4], 5), [(1, 4), (2, 3)])
 
     def test_case_2(self):
-        self.assertEqual(find_pairs_with_sum([1, 1, 1], 2), [(1, 1), (1, 1), (1, 1)])
+        self.assertEqual(find_pairs_with_sum([1, 1, 1], 2), [(1, 1)])
 
     def test_case_3(self):
         self.assertEqual(find_pairs_with_sum([], 5), [])

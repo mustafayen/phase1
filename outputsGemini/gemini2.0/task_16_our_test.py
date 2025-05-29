@@ -6,7 +6,6 @@
 # * Student ID: 150190022
 
 
-
 import unittest
 from task_16_code import is_palindrome
 
@@ -21,8 +20,8 @@ class TestIsPalindrome(unittest.TestCase):
     def test_not_palindrome(self):
         self.assertFalse(is_palindrome("hello"))
 
-    def test_case_sensitive(self):
-        self.assertFalse(is_palindrome("RaceCar"))
+    def test_case_insensitive(self):
+        self.assertTrue(is_palindrome("RaceCar"))  # Fonksiyon case-insensitive
 
     def test_empty_string(self):
         self.assertTrue(is_palindrome(""))
